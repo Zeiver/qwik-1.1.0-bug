@@ -1,5 +1,5 @@
-import { component$, useContext } from "@builder.io/qwik";
-import { ExampleContext } from "~/routes";
+import { component$, useContext } from '@builder.io/qwik';
+import { ExampleContext } from '~/routes';
 
 export default component$(() => {
   const exampleContext = useContext(ExampleContext);
@@ -8,12 +8,12 @@ export default component$(() => {
     <>
       <button
         onClick$={() => {
-          exampleContext.text = "was clicked";
+          exampleContext.text = 'was clicked';
         }}
       >
         Click me to show the context text value!
       </button>
-      {exampleContext.text !== undefined && <>Hi</>}
+      {exampleContext.text !== undefined && <>{exampleContext.text}</>}
     </>
   );
 });

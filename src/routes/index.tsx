@@ -4,16 +4,16 @@ import {
   useContext,
   useContextProvider,
   useStore,
-} from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
-import Example from "~/components/starter/example/example";
+} from '@builder.io/qwik';
+import type { DocumentHead } from '@builder.io/qwik-city';
+import Example from '~/components/starter/example/example';
 
 export interface ExampleContextState {
   text?: string;
 }
 
 export const ExampleContext = createContextId<ExampleContextState>(
-  "example.example-context"
+  'example.example-context'
 );
 
 export default component$(() => {
@@ -28,11 +28,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: 'Welcome to Qwik',
   meta: [
     {
-      name: "description",
-      content: "Qwik site description",
+      name: 'description',
+      content: 'Qwik site description',
     },
   ],
 };
